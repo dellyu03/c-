@@ -14,17 +14,17 @@ class CClient {
 public:
     CClient();
     ~CClient();
+
     bool Initialize();
     void ConnectToServer(const std::string& serverIp);
     void SendMessage(const std::string& message);
     void ReceiveMessagesAsync();
-    void UserInput();
-    void Disconnect();
     void sendCommandToServer();
+    void sendGameCommandToServer();
+    void Disconnect();  
 
 private:
     SOCKET m_socket;
     sockaddr_in m_serverAddr;
-    bool m_isConnected{ false };
-    std::mutex m_inputMutex;
+    bool m_isConnected;
 };

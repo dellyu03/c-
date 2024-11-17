@@ -1,5 +1,4 @@
 ﻿// Server.h
-// Server.h
 #pragma once
 
 #include <winsock2.h>

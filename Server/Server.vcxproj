@@ -185,6 +185,7 @@
   <ItemGroup>
     <ClInclude Include="ClientHandler.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="GameManager.h" />
     <ClInclude Include="NetworkUtils.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
